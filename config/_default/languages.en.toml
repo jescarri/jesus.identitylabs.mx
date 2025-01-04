@@ -1,0 +1,30 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Jesus Carrillo's Blog"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  description = "My Blog"
+  copyright = "Jesus Carrillo"
+
+[params.author]
+  name = "Jesus Carrillo"
+  email = "jesuscarrillo8@gmail.com"
+  image = "img/jescarri.jpeg"
+  imageQuality = 96
+  headline = "I'm only human"
+  bio = "Cloudnative Jedi, Unix/Linux Geek, Electronics, RF and Embedded systems enthusiast."
+  links = [
+    { email = "mailto:jesuscarrillo8@gmail.com" },
+    { github = "https://github.com/jescarri" },
+    { gitlab = "https://gitlab.com/jesuscarrillo8" },
+    { linkedin = "https://linkedin.com/in/jescarri" },
+    { link = "https://www.va7rcv.ca" },
+  ]

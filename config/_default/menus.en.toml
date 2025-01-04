@@ -1,0 +1,25 @@
+# -- Main Menu --
+[[main]]
+ name = "Blog"
+ pageRef = "posts"
+ weight = 1
+
+[[main]]
+  name = "About Me"
+  pageRef = "/about"
+  weight = 2
+
+# -- Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
+
+
+# [[footer]]
+#   name = "Tags"
+#   pageRef = "tags"
+#   weight = 10
+
+# [[footer]]
+#   name = "Categories"
+#   pageRef = "categories"
+#   weight = 20
