@@ -67,13 +67,13 @@ ToDo:
 
 # Telemetry format
 
-Data is sent to the Things Network using CayenneLPP, This project uses the (electroniccats/CayenneLPP)[https://github.com/ElectronicCats/CayenneLPP] implementation, I found this to be the implementation that had extended support for extra data fields.
+Data is sent to the Things Network using CayenneLPP, This project uses the [electroniccats/CayenneLPP](https://github.com/ElectronicCats/CayenneLPP) implementation, I found this to be the implementation that had extended support for extra data fields.
 
 # Things Network configuration
 
 1. Create an application.
 
-2. Add the Payload Decoder from the (electroniccats/CayenneLPP)[] project.
+2. Add the Payload Decoder from the [electroniccats/CayenneLPP](https://github.com/ElectronicCats/CayenneLPP).
 
 3. Create an device use: LoRaWAN Specification 1.0.3, RP001 Regional Parameters 1.0.3 revision A
 
