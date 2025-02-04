@@ -12,7 +12,7 @@ When I built the first prototype of the low-power LoRa board, I didn't expect mu
 
 The current was too high in deep sleep:
 
-![Deep Sleep](https://github.com/jescarri/lora-node/blob/main/power-profile/sleep_after_gpio_hold.png?raw=true)
+![Deep Sleep](https://github.com/jescarri/lora-node/blob/main/power-profile/sleep_before_gpio_hold.png?raw=true)
 
 At first, I suspected the issue might be due to using cheap LiPo batteries, so I replaced them with original Sony 18650 purchased from a reputable supplier. To my surprise, the battery was discharging too quickly; it dropped from 100% to 86% in about 48 hours. Something wasn't right.
 
