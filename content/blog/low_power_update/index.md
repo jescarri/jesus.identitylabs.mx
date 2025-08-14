@@ -13,6 +13,8 @@ The nodes sample soil moisture every four hours and transmit the readings over L
 
 {{< figure src="SENSOR_STATUS.png" alt="Grafana dashboard with node status" href="SENSOR_STATUS.png" target="_blank" nozoom=true >}}
 
+{{< figure src="home_assistant_panel.png" alt="Home Assistant Pannel" href="home_assistant_panel.png" target="_blank" nozoom=true >}}
+
 I’ve been looking for more power savings, After reviewing my design notes, I tried an experiment:
 
 I shared the schematic and firmware with ChatGPT (o3) to see what it would suggest. The feedback fell into two buckets: hardware and firmware.
