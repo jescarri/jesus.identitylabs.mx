@@ -47,6 +47,10 @@ For the antenna, I’m currently using an [antennas.us 70 cm / 2 m QFH kit](http
 
 {{< figure src="antenna_install.jpg" alt="Antenna Install" href="antenna_install.jpg" target="_blank" nozoom=true >}}
 
+You can see how the antenna + LNA performed during an International Space Station pass:
+
+{{< youtube u3c8jUWJXho >}}
+
 
 ## Field test: what rain taught me
 
