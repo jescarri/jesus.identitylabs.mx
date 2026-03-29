@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /home/jescarri/workspace/blog/jesus.identitylabs.mx/content/blog/go-joplin-mcp)",
+      "Bash(cp /home/jescarri/workspace/blog/jesus.identitylabs.mx/content/blog/go-joplin/featured.png /home/jescarri/workspace/blog/jesus.identitylabs.mx/content/blog/go-joplin-mcp/featured.png)",
+      "Bash(python3:*)"
+    ]
+  }
+}
