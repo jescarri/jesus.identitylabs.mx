@@ -3,7 +3,14 @@
     "allow": [
       "Bash(mkdir -p /home/jescarri/workspace/blog/jesus.identitylabs.mx/content/blog/go-joplin-mcp)",
       "Bash(cp /home/jescarri/workspace/blog/jesus.identitylabs.mx/content/blog/go-joplin/featured.png /home/jescarri/workspace/blog/jesus.identitylabs.mx/content/blog/go-joplin-mcp/featured.png)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git add:*)",
+      "Bash(find /home/jescarri/workspace/blog/jesus.identitylabs.mx/public -name *.html -exec grep -l \"mermaid\\\\|diagram\" {})",
+      "Bash(2)",
+      "WebFetch(domain:llm.identitylabs.mx)",
+      "Bash(grep -r {{.*mermaid /home/jescarri/workspace/blog/jesus.identitylabs.mx/content)"
     ]
   }
 }
