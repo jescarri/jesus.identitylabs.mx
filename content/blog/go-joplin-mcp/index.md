@@ -1,6 +1,6 @@
 ---
 title: "go-joplin: MCP, RAG Search, and a Month of Changes"
-date: 2026-03-29T00:00:00-08:00
+date: 2026-03-23T22:00:00-07:00
 draft: false
 tags: ["ai", "mcp", "joplin", "golang", "rag"]
 categories: ["Projects"]
