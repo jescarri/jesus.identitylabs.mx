@@ -1,6 +1,6 @@
 ---
 title: "A Pluggable Compute Board for Low-Power Projects"
-date: 2026-07-02T20:00:00-07:00
+date: 2026-07-02T13:00:00-07:00
 draft: false
 tags: ["esp32", "pcb", "kicad", "low-power", "hardware", "iot", "open-source"]
 categories: ["Projects"]
