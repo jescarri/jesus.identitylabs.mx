@@ -61,6 +61,20 @@ This PCB build was sponsored by [PCBWay](https://www.pcbway.com). If you've neve
 
 PCBWay is also running a month-long 12th anniversary campaign starting this July. During the campaign they're offering around $435 in coupons, and premium purple and pink solder mask free of charge. If you've been sitting on a board design, this is a good time to send it out. Details are on their [anniversary campaign page](https://www.pcbway.com/activity/anniversary12th.html).
 
+### The PCBWay Quality
+
+My boards came out perfectly as you can see in the following pictures:
+
+{{< figure src="pcb01.jpg" alt="PCB Front" href="pcb01.jpg" target="_blank" nozoom=true >}}
+
+{{< figure src="pcb02.jpg" alt="PCB Back" href="pcb02.jpg" target="_blank" nozoom=true >}}
+
+#### Fully assembled node
+
+{{< figure src="full01.jpg" alt="Full PCB" href="pcb01.jpg" target="_blank" nozoom=true >}}
+
+{{< figure src="full02.jpg" alt="Full PCB Back" href="full02.jpg" target="_blank" nozoom=true >}}
+
 ## What's next
 
 The compute-board and baseboard repos are up and building cleanly. Next is turning the Garmin Varia radar logger into an actual baseboard on top of this platform GPS,Lora, APRs etc, and the multi-channel telemetry it was designed for from the start. I'll follow up once that PoC comes off the protoboard.
