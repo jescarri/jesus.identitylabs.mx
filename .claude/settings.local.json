@@ -10,7 +10,19 @@
       "Bash(find /home/jescarri/workspace/blog/jesus.identitylabs.mx/public -name *.html -exec grep -l \"mermaid\\\\|diagram\" {})",
       "Bash(2)",
       "WebFetch(domain:llm.identitylabs.mx)",
-      "Bash(grep -r {{.*mermaid /home/jescarri/workspace/blog/jesus.identitylabs.mx/content)"
+      "Bash(grep -r {{.*mermaid /home/jescarri/workspace/blog/jesus.identitylabs.mx/content)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(curl -sI https://jescarri.github.io/compute-board/main/3d/top.png)",
+      "Bash(curl -sI https://jescarri.github.io/compute-board/main/3d/bottom.png)",
+      "Bash(mkdir -p content/blog/compute-board)",
+      "Bash(curl -sL https://jescarri.github.io/compute-board/main/3d/top.png -o content/blog/compute-board/featured.png)",
+      "Bash(curl -sL https://jescarri.github.io/compute-board/main/3d/top.png -o content/blog/compute-board/board_top.png)",
+      "Bash(curl -sL https://jescarri.github.io/compute-board/main/3d/bottom.png -o content/blog/compute-board/board_bottom.png)",
+      "Bash(curl -sL https://raw.githubusercontent.com/jescarri/baseboard/main/baseboard.png -o content/blog/compute-board/baseboard.png)",
+      "Bash(find / -iname \"*remove-ai-slop*\")",
+      "Read(//home/jescarri/.claude/**)",
+      "Skill(humanizer)"
     ]
   }
 }
