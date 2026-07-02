@@ -22,7 +22,13 @@
       "Bash(curl -sL https://raw.githubusercontent.com/jescarri/baseboard/main/baseboard.png -o content/blog/compute-board/baseboard.png)",
       "Bash(find / -iname \"*remove-ai-slop*\")",
       "Read(//home/jescarri/.claude/**)",
-      "Skill(humanizer)"
+      "Skill(humanizer)",
+      "Bash(git submodule *)",
+      "Bash(gh run *)",
+      "Bash(curl -sI https://jesus.identitylabs.mx/ --max-time 10 -o /tmp/h.txt -w \"%{http_code}\\\\n\")",
+      "Read(//tmp/**)",
+      "WebFetch(domain:www.githubstatus.com)",
+      "WebFetch(domain:api.github.com)"
     ]
   }
 }
