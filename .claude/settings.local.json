@@ -28,7 +28,9 @@
       "Bash(curl -sI https://jesus.identitylabs.mx/ --max-time 10 -o /tmp/h.txt -w \"%{http_code}\\\\n\")",
       "Read(//tmp/**)",
       "WebFetch(domain:www.githubstatus.com)",
-      "WebFetch(domain:api.github.com)"
+      "WebFetch(domain:api.github.com)",
+      "Bash(hugo version *)",
+      "Bash(hugo --minify --baseURL \"https://jesus.identitylabs.mx/\" -d /tmp/claude-1000/-home-jescarri-workspace-blog-jesus-identitylabs-mx/355b18a6-c8be-4a63-9ff7-8081f501ec6c/scratchpad/public)"
     ]
   }
 }
