@@ -5,9 +5,14 @@
  weight = 1
 
 [[main]]
+  name = "Resume"
+  pageRef = "/resume"
+  weight = 2
+
+[[main]]
   name = "About Me"
   pageRef = "/about"
-  weight = 2
+  weight = 3
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
