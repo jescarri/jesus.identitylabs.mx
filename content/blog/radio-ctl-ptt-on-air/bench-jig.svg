@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif" role="img" aria-label="Bench jig with the radio unplugged: the host drives RTS and DTR through the FTDI cable into the PTT gate, whose output node PTTP is pulled up to 5 V through 10 kilohms. Four scope channels probe RTS, DTR, the Q4 base and PTTP.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#8793a3"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="820" height="330" rx="14" fill="#f7f8fa" stroke="#d7dbe0"/>
+  <style>
+    .box { fill:#ffffff; stroke:#5b7cfa; stroke-width:2; }
+    .core { fill:#eef2ff; stroke:#3b5bdb; stroke-width:2; }
+    .ghost { fill:none; stroke:#8793a3; stroke-width:1.6; stroke-dasharray:6 5; }
+    .t { fill:#1b2430; font-size:15px; font-weight:600; }
+    .s { fill:#55616f; font-size:12px; }
+    .wire { stroke:#1b2430; stroke-width:2; fill:none; }
+    .arr { stroke:#8793a3; stroke-width:1.6; fill:none; }
+    .probe { fill:#e8842b; stroke:#ffffff; stroke-width:1.5; }
+    .pl { fill:#b45f0a; font-size:12px; font-weight:700; }
+  </style>
+
+  <text x="30" y="36" class="s">Bench jig, radio unplugged</text>
+
+  <rect x="30" y="110" width="120" height="80" rx="10" class="box"/>
+  <text x="46" y="146" class="t">Host</text>
+  <text x="46" y="166" class="s">radio-ctl test</text>
+
+  <path class="arr" d="M150 150 L198 150" marker-end="url(#arrow)"/>
+  <text x="174" y="140" class="s" text-anchor="middle">USB</text>
+
+  <rect x="200" y="110" width="130" height="80" rx="10" class="box"/>
+  <text x="216" y="146" class="t">FTDI FT232R</text>
+  <text x="216" y="166" class="s">serial cable</text>
+
+  <path class="wire" d="M330 130 L440 130"/>
+  <path class="wire" d="M330 170 L440 170"/>
+  <text x="338" y="122" class="s">RTS</text>
+  <text x="338" y="188" class="s">DTR</text>
+
+  <rect x="440" y="100" width="140" height="100" rx="10" class="core"/>
+  <text x="456" y="146" class="t">PTT gate</text>
+  <text x="456" y="166" class="s">Q3 + Q4</text>
+
+  <path class="wire" d="M580 150 L660 150"/>
+  <text x="590" y="140" class="s">PTTP</text>
+  <circle cx="660" cy="150" r="4" fill="#1b2430"/>
+
+  <path class="wire" d="M660 150 L660 110"/>
+  <rect x="650" y="70" width="20" height="40" class="box"/>
+  <text x="678" y="94" class="s">10 kΩ</text>
+  <path class="wire" d="M660 70 L660 50"/>
+  <text x="660" y="40" class="t" text-anchor="middle">+5 V bench supply</text>
+
+  <path class="ghost" d="M664 150 L700 150"/>
+  <rect x="700" y="110" width="100" height="80" rx="10" class="ghost"/>
+  <text x="716" y="146" class="s">IC-910H pin 3</text>
+  <text x="716" y="164" class="s">not connected</text>
+
+  <circle cx="400" cy="130" r="5" class="probe"/>
+  <text x="400" y="116" class="pl" text-anchor="middle">C1</text>
+  <circle cx="400" cy="170" r="5" class="probe"/>
+  <text x="400" y="192" class="pl" text-anchor="middle">C2</text>
+  <circle cx="510" cy="200" r="5" class="probe"/>
+  <text x="510" y="220" class="pl" text-anchor="middle">C3 (Q4 base)</text>
+  <circle cx="630" cy="150" r="5" class="probe"/>
+  <text x="630" y="172" class="pl" text-anchor="middle">C4</text>
+
+  <rect x="190" y="248" width="440" height="56" rx="10" class="box"/>
+  <text x="210" y="272" class="t">Siglent SDS1104X-E</text>
+  <text x="210" y="292" class="s">C1 = RTS pad, C2 = DTR pad, C3 = Q4 base, C4 = PTTP</text>
+</svg>

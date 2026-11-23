@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 540" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif" role="img" aria-label="radio-ctl audio pipeline: capture, hub fan-out, Direwolf, and browser Rx/Tx">
+  <rect x="0" y="0" width="900" height="540" rx="16" fill="#f7f8fa"/>
+  <text x="28" y="40" font-size="20" font-weight="700" fill="#1f2430">radio-ctl audio pipeline</text>
+  <text x="28" y="62" font-size="13" fill="#5b6472">48 kHz · S16LE · stereo (L = MAIN, R = SUB) · 10 ms blocks</text>
+
+  <!-- Radio -->
+  <rect x="28" y="110" width="150" height="120" rx="10" fill="#e8ecf2" stroke="#9aa6b8"/>
+  <text x="103" y="150" font-size="14" font-weight="700" text-anchor="middle" fill="#1f2430">IC-910H</text>
+  <text x="103" y="172" font-size="11" text-anchor="middle" fill="#5b6472">DATA AF OUT</text>
+  <text x="103" y="188" font-size="11" text-anchor="middle" fill="#5b6472">DATA IN · CI-V</text>
+  <text x="103" y="214" font-size="11" text-anchor="middle" fill="#5b6472">via UCA20x</text>
+
+  <!-- Hub -->
+  <rect x="268" y="96" width="150" height="150" rx="10" fill="#dbe7ff" stroke="#5b86e5"/>
+  <text x="343" y="130" font-size="14" font-weight="700" text-anchor="middle" fill="#1f2430">audio.Hub</text>
+  <text x="343" y="152" font-size="11" text-anchor="middle" fill="#5b6472">capture + fan-out</text>
+  <text x="343" y="172" font-size="11" text-anchor="middle" fill="#5b6472">Tap ring buffers</text>
+  <text x="343" y="192" font-size="11" text-anchor="middle" fill="#5b6472">software squelch</text>
+  <text x="343" y="222" font-size="11" text-anchor="middle" fill="#2c7a4b">drops on overrun</text>
+
+  <!-- Direwolf -->
+  <rect x="508" y="70" width="160" height="96" rx="10" fill="#fff0d9" stroke="#e0a93b"/>
+  <text x="588" y="104" font-size="14" font-weight="700" text-anchor="middle" fill="#1f2430">Direwolf (child)</text>
+  <text x="588" y="126" font-size="11" text-anchor="middle" fill="#5b6472">ADEVICE UDP:7355</text>
+  <text x="588" y="144" font-size="11" text-anchor="middle" fill="#5b6472">ACHANNELS 2</text>
+
+  <!-- AGW / decode -->
+  <rect x="728" y="70" width="150" height="96" rx="10" fill="#e8ecf2" stroke="#9aa6b8"/>
+  <text x="803" y="104" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2430">AGW client</text>
+  <text x="803" y="126" font-size="11" text-anchor="middle" fill="#5b6472">ax25 → aprs</text>
+  <text x="803" y="144" font-size="11" text-anchor="middle" fill="#5b6472">store → Bus → WS</text>
+
+  <!-- Pion WebRTC -->
+  <rect x="508" y="190" width="160" height="96" rx="10" fill="#e4f6ea" stroke="#54b57a"/>
+  <text x="588" y="224" font-size="14" font-weight="700" text-anchor="middle" fill="#1f2430">Pion WebRTC</text>
+  <text x="588" y="246" font-size="11" text-anchor="middle" fill="#5b6472">main + sub tracks</text>
+  <text x="588" y="264" font-size="11" text-anchor="middle" fill="#5b6472">PCMU · ptt channel</text>
+
+  <!-- Browser -->
+  <rect x="728" y="190" width="150" height="96" rx="10" fill="#e8ecf2" stroke="#9aa6b8"/>
+  <text x="803" y="224" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2430">Browser</text>
+  <text x="803" y="246" font-size="11" text-anchor="middle" fill="#5b6472">WebAudio mix</text>
+  <text x="803" y="264" font-size="11" text-anchor="middle" fill="#5b6472">hold-to-talk</text>
+
+  <!-- TX arbiter -->
+  <rect x="268" y="330" width="150" height="120" rx="10" fill="#ffe3e3" stroke="#e06464"/>
+  <text x="343" y="364" font-size="14" font-weight="700" text-anchor="middle" fill="#1f2430">TX arbiter</text>
+  <text x="343" y="386" font-size="11" text-anchor="middle" fill="#5b6472">one lease:</text>
+  <text x="343" y="403" font-size="11" text-anchor="middle" fill="#5b6472">voice OR tnc</text>
+  <text x="343" y="425" font-size="11" text-anchor="middle" fill="#5b6472">keyer + PTT</text>
+
+  <!-- Loopback FIFO -->
+  <rect x="508" y="330" width="160" height="120" rx="10" fill="#fff0d9" stroke="#e0a93b"/>
+  <text x="588" y="364" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2430">LoopbackSource</text>
+  <text x="588" y="386" font-size="11" text-anchor="middle" fill="#5b6472">reads tx.fifo</text>
+  <text x="588" y="403" font-size="11" text-anchor="middle" fill="#5b6472">(ALSA file plugin)</text>
+  <text x="588" y="425" font-size="11" text-anchor="middle" fill="#5b6472">Direwolf TX audio</text>
+
+  <!-- arrows -->
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6472"/>
+    </marker>
+  </defs>
+  <g stroke="#5b6472" stroke-width="2" fill="none" marker-end="url(#a)">
+    <!-- radio -> hub (RX capture) -->
+    <path d="M178,160 L262,160"/>
+    <!-- hub -> direwolf UDP -->
+    <path d="M418,140 L502,118"/>
+    <!-- direwolf -> agw -->
+    <path d="M668,118 L722,118"/>
+    <!-- hub -> pion -->
+    <path d="M418,190 L502,225"/>
+    <!-- pion -> browser (down tracks) -->
+    <path d="M668,232 L722,232"/>
+    <!-- browser mic -> pion (up) -->
+    <path d="M728,256 L674,256"/>
+    <!-- pion -> arbiter (voice tx) -->
+    <path d="M560,286 L380,330"/>
+    <!-- direwolf fifo -> loopback -->
+    <path d="M588,166 L588,324" stroke-dasharray="5 4"/>
+    <!-- loopback -> arbiter -->
+    <path d="M508,400 L424,400"/>
+    <!-- arbiter -> radio (TX) -->
+    <path d="M268,400 Q150,400 110,236"/>
+  </g>
+
+  <text x="430" y="120" font-size="10" fill="#8792a2">lossless PCM</text>
+  <text x="430" y="206" font-size="10" fill="#8792a2">gated / squelch</text>
+  <text x="604" y="250" font-size="10" fill="#8792a2" transform="rotate(90 604 250)"></text>
+  <text x="150" y="300" font-size="10" fill="#8792a2">keys CI-V, L out</text>
+</svg>
