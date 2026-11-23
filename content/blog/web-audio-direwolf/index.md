@@ -100,8 +100,4 @@ Then it keys CI-V, waits for the ACK, pauses 30 ms for switch-over, and plays th
 
 The payoff is that there is exactly one place in the code where the transmitter gets keyed, for voice and data alike. I can unit-test it against a fake radio and assert the ordering, the drain-before-unkey, the watchdog timeout, and that Direwolf never found its way to a real PTT path.
 
-## Next
-
-The part I'd keep if I rewrote everything is the buffering: small bounded rings that fail in isolation, with the real jitter smoothing left to the browser.
-
 Next is [satellite tracking](/blog/web-satellite-tracking/): Doppler correction across both VFOs, and hearing your own downlink while you transmit on the uplink. That full-duplex trick leans on everything here.

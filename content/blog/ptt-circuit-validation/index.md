@@ -103,8 +103,4 @@ If I ever need solid multi-millisecond margin, the right knob is R2: raise it to
 
 For now, with the serial glitches this cable produces, 4.7 µF is the fitted value and the gate is good.
 
-## Next: on the air
-
-The 1 µF build looked fine on paper and keyed the radio on a glitch. I trust the 4.7 µF build because I watched PTTP stay flat on channel 4 while the generator threw a glitch at it. Re-running the whole suite after a one-capacitor change took a single command, so I did it.
-
 The [next post]({{< relref "radio-ctl-ptt-on-air" >}}) wires the gate into radio-ctl, checks that the CI-V read-back follows every key and unkey, and sends the first APRS packet that carries audio.

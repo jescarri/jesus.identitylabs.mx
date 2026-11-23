@@ -83,7 +83,3 @@ Decoding other people is one thing. Getting heard is the test. Here is aprs.fi, 
 And a video of APRS running through radio-ctl:
 
 {{< youtube UhKcDbK1C1k >}}
-
-## What is next
-
-On-air commissioning is done. I want more satellites in the database, a better pass view, and probably a logbook. Nothing is blocking any of it.

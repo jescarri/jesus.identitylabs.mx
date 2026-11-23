@@ -148,10 +148,4 @@ They are checked before anything is sent by `fg set`, `fg output on`, and the `f
 
 The escape hatches, `raw` and `script`, send SCPI exactly as written and bypass the limits by design. They are the sharp tools, for deliberate use.
 
-## The missing half: a bench-harness
-
-The RadioCTL measurements are no longer notes in a file. They are plans that either pass or fail.
-
-A plan that drives three instruments is only half a validation loop, though. The other half is the thing under test: the board, its firmware, and a harness that wires them together so a code change gets measured against real signals automatically. I'm calling that the bench-harness, and I'll write it up separately.
-
-Next up is the first real use of benchctl: putting the PTT gate on the bench and seeing whether it survives.
+The first real use of benchctl is [putting the PTT gate on the bench]({{< relref "ptt-circuit-validation" >}}) and seeing whether it survives.

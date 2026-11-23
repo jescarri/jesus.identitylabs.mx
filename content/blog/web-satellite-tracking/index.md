@@ -87,6 +87,4 @@ When you're not tracking, that same panel runs as a live preview for the selecte
 
 Because the tracker reads the radio back and pushes a fresh status every second, the display stays accurate whether the last move came from the browser, the physical dial, or the tracker itself.
 
-## Next
-
-Software can steer frequencies, but it can't key the transmitter by itself. To get on the air I need a PTT interface, a bit of hardware between the computer and the radio. [Next]({{< relref "ptt-hardware-interface" >}}) is the PTT circuit and the part of this project where I finally pick up a soldering iron.
+Software can steer frequencies, but it can't key the transmitter by itself. That takes a PTT interface, a bit of hardware between the computer and the radio, and it is where I finally pick up a soldering iron. It is [the next post]({{< relref "ptt-hardware-interface" >}}).
