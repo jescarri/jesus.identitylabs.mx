@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+  <rect x="0" y="0" width="760" height="420" rx="14" fill="#f7f8fa" stroke="#d7dbe0"/>
+  <style>
+    .box { fill:#ffffff; stroke:#5b7cfa; stroke-width:2; }
+    .core { fill:#eef2ff; stroke:#3b5bdb; stroke-width:2; }
+    .lo { fill:#fff7ed; stroke:#e8842b; stroke-width:2; }
+    .t { fill:#1b2430; font-size:15px; font-weight:600; }
+    .s { fill:#55616f; font-size:12px; }
+    .lbl { fill:#55616f; font-size:12px; }
+    .arr { stroke:#8793a3; stroke-width:1.6; fill:none; }
+  </style>
+
+  <text x="30" y="36" class="s">CAT clients (Gpredict · WSJT-X · rigctl -m 2)</text>
+  <text x="470" y="36" class="s">Browser console · scripts</text>
+
+  <rect x="30" y="50" width="300" height="64" rx="10" class="box"/>
+  <text x="48" y="78" class="t">internal/rigctld</text>
+  <text x="48" y="98" class="s">Hamlib parser · RPRT · TCP :4532</text>
+
+  <rect x="430" y="50" width="300" height="64" rx="10" class="box"/>
+  <text x="448" y="78" class="t">internal/api</text>
+  <text x="448" y="98" class="s">REST + WebSocket :8080</text>
+
+  <path class="arr" d="M180 114 L180 150 L380 150 L380 170"/>
+  <path class="arr" d="M580 114 L580 150 L380 150"/>
+
+  <rect x="210" y="170" width="340" height="66" rx="10" class="core"/>
+  <text x="230" y="198" class="t">internal/rig — state engine</text>
+  <text x="230" y="219" class="s">one operation lock · VFO targeting · TX interlock</text>
+
+  <path class="arr" d="M380 236 L380 262"/>
+
+  <rect x="210" y="262" width="340" height="66" rx="10" class="box"/>
+  <text x="230" y="290" class="t">internal/transport</text>
+  <text x="230" y="311" class="s">echo discard · reply match · ACK/NAK · guards</text>
+
+  <path class="arr" d="M380 328 L380 356"/>
+
+  <rect x="210" y="356" width="340" height="44" rx="10" class="lo"/>
+  <text x="230" y="383" class="t">/dev/ttyUSB0 — CI-V 19200 8N1, addr 0x60</text>
+</svg>
