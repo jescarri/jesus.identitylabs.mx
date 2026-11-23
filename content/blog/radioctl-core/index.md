@@ -1,5 +1,5 @@
 +++
-date = '2026-10-11T09:00:00-07:00'
+date = '2026-11-22T09:00:00-07:00'
 draft = false
 title = 'RadioCTL: A rigctld-Inspired Service That Controls the Radio'
 tags = ['Amateur Radio', 'Golang', 'Icom', 'CI-V', 'Hamlib', 'Reverse Engineering', 'CAT']
