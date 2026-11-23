@@ -1,5 +1,5 @@
 +++
-date = '2026-11-22T09:00:00-07:00'
+date = '2026-11-16T09:00:00-07:00'
 draft = false
 title = 'Keying the IC-910 from software: the PTT gate meets radio-ctl'
 tags = [ 'amateur-radio', 'golang', 'ptt', 'ic-910', 'aprs', 'ftdi', 'serial', 'direwolf' ]

@@ -1,5 +1,5 @@
 +++
-date = '2026-10-11T09:00:00-07:00'
+date = '2026-11-22T09:00:00-07:00'
 draft = false
 title = 'RadioCTL: A rigctld-Inspired Service That Controls the Radio'
 tags = ['Amateur Radio', 'Golang', 'Icom', 'CI-V', 'Hamlib', 'Reverse Engineering', 'CAT']
@@ -12,9 +12,11 @@ summary = 'How I built a modern control daemon for the Icom IC-910 by reverse-en
 
 My Icom IC-910H has been part of my station for years. It's a capable VHF/UHF all-mode radio, genuinely great for satellite work, but it's showing its age. The display is dim and tired, and the menu system has always driven me up the wall: too many button-presses to reach the things I change most, all buried behind a UX from another era.
 
-I kept coming back to the same idea: skip the front panel entirely and drive the radio over the network, from a laptop, a phone, anything with a browser. A modern interface for a radio that never shipped with one, without replacing a radio I already like.
+I wanted to revamp the radio instead of replacing it. Skip the front panel entirely and drive it over the network, from a laptop, a phone, anything with a browser: a modern interface for a radio that never shipped with one.
 
-That became RadioCTL, a control service I wrote for the IC-910H. This is the first of eight posts about it. The rest cover the web interface (audio and Direwolf), satellite tracking, the PTT hardware, the bench tooling and validation that kept me from frying anything, the first on-air test, and a tour of the finished console. This post is about the core, the service that talks to the radio.
+I also wanted to find out how far an AI assistant could take a real hardware and software project. So I used Claude Code to design all of it: the Go control software, and the hardware interface between the radio and the computer (the audio path and the PTT circuit). I set the goals and the safety rules, and I checked every result on the bench and on the air. Claude Code did the design work and wrote the code.
+
+That became RadioCTL, a control service for the IC-910H. This is the first of eight posts about how it was built. The rest cover the web interface (audio and Direwolf), satellite tracking, the PTT hardware, the bench tooling and validation that kept me from frying anything, the first on-air test, and a tour of the finished console. This post is about the core, the service that talks to the radio.
 
 I wanted one small Go binary that did three things: speak the Hamlib `rigctld` protocol so my existing software (Gpredict, WSJT-X, fldigi) kept working unchanged, expose a REST/WebSocket API for a web console, and never key the transmitter unless I explicitly allowed it. That last requirement shaped the whole design.
 

@@ -1,5 +1,5 @@
 +++
-date = '2026-11-08T09:00:00-07:00'
+date = '2026-11-18T09:00:00-07:00'
 draft = false
 title = 'benchctl: A CLI to Automate My Bench Equipment'
 tags = ['go', 'scpi', 'vxi-11', 'test-automation', 'cli', 'electronics', 'hexagonal-architecture']

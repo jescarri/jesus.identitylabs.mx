@@ -1,5 +1,5 @@
 +++
-date = '2026-11-15T09:00:00-07:00'
+date = '2026-11-17T09:00:00-07:00'
 draft = false
 title = 'Validating the PTT Circuit on the Bench'
 tags = ["ptt", "oscilloscope", "siglent", "benchctl", "ic-910", "hardware", "ham-radio", "bench-validation"]
