@@ -1,5 +1,5 @@
 +++
-date = '2026-11-01T09:00:00-07:00'
+date = '2026-11-19T09:00:00-07:00'
 draft = false
 title = 'Hardware for RadioCTL: the USB sound card, the audio interface, and the PTT circuit I had to build'
 tags = ['Amateur Radio', 'IC-910H', 'FTDI', 'PTT', 'Electronics', 'APRS', 'RadioCTL']

@@ -1,5 +1,5 @@
 +++
-date = '2026-11-29T09:00:00-07:00'
+date = '2026-11-15T09:00:00-07:00'
 draft = false
 title = 'radio-ctl in daily use: a tour of the web console'
 tags = [ 'amateur-radio', 'ic-910', 'web-ui', 'svelte', 'aprs', 'satellites', 'repeaters', 'doppler' ]

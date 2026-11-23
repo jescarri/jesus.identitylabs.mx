@@ -1,5 +1,5 @@
 +++
-date = '2026-10-18T09:00:00-07:00'
+date = '2026-11-21T09:00:00-07:00'
 draft = false
 title = 'The Web Interface, Part 1: Audio, Buffers, and Direwolf'
 tags = ['amateur-radio', 'golang', 'webrtc', 'direwolf', 'aprs', 'audio', 'tnc', 'icom', 'pion', 'svelte']

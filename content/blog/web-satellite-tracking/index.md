@@ -1,5 +1,5 @@
 +++
-date = '2026-10-25T09:00:00-07:00'
+date = '2026-11-20T09:00:00-07:00'
 draft = false
 title = 'The Web Interface, Part 2: Satellite Tracking'
 tags = ['amateur-radio', 'satellites', 'sgp4', 'doppler', 'go', 'svelte', 'orbital-mechanics']
