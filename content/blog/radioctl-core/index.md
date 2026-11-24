@@ -104,8 +104,4 @@ A client asking for `T 1` without the flag gets Hamlib's `RPRT -9` back and noth
 
 Defence in depth for a hobby project feels like overkill until you remember the alternative is a transmitter keyed into who-knows-what while you're debugging a parser.
 
-## Where it stands
-
-Most of the work was archaeology: Hamlib's source, real bytes on the USB bus, frame-by-frame diffs against upstream. The result is one binary that Gpredict and friends treat as a real `rigctld`, with an API underneath and a transmit interlock I trust.
-
-Next is the web interface: a browser console that mirrors the radio's front panel, streams receive audio, and feeds a Direwolf TNC.
+Next is [the web interface](/blog/web-audio-direwolf/): a browser console that mirrors the radio's front panel, streams receive audio, and feeds a Direwolf TNC.

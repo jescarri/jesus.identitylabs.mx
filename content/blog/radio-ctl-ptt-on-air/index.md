@@ -146,10 +146,4 @@ radio-ctl sends MAIN and SUB as two WebRTC tracks under a single stream id, so t
 The fix was one line: build `new MediaStream([e.track])` per band so each node gets its own single-track stream. Before, 2 of 5 sessions came up silent. After, 10 of 10 had audio, with MAIN and SUB measurably independent. The cause was embarrassing and the fix was trivial, which is the usual ratio.
 {{< figure src="tnc-decodes.png" alt="The radio-ctl TNC page with Direwolf running and an APRS map of decoded stations" href="tnc-decodes.png" target="_blank" nozoom=true >}}
 
-## The decisions that paid off
-
-Putting the hardware behind the existing `Session.SetPTT` choke point saved the most work. The arbiter, the interlocks and all four client surfaces got hardware PTT without a single change. The `1C 00` read-back was the other good call: "probably keyed" became a lease the radio itself confirms.
-
-The two bugs that mattered came from testing against the real thing. A pty does not behave like a parked FTDI reader, so only the scope found the file-descriptor bug. And I found the silent browser audio by measuring with an analyser, after wasting time listening and guessing.
-
 Next is [a tour of the finished web console](/blog/radio-ctl-web-console/), which ties the TNC, the audio and this PTT path together.
